@@ -1,0 +1,7 @@
+torch
+numpy
+boto3
+requests
+regex
+sentencepiece
+sacremoses
