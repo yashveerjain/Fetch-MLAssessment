@@ -3,24 +3,27 @@ link to assessment [here](https://app3.greenhouse.io/tests/dc9d7860c17da3281ab02
 
 # Base Model
 Base Model Architecture:
- - Embedding Layer
- - Positional Encoding
- - Transformer Encoder Layer
+ - Embedding Layer:
+    - It will generate the embedding vector for each word. Give more context to the model about the word. 
+ - Positional Encoding:
+    - It will add positional information to the embedding vector. Which helps the model to understand the order of the words in the sentence.
+ - Transformer Encoder Layer:
+    - It will generate the embedding vector for each word, with same sequence length.
 
-This is the base model which is used for all the tasks. Used Transformer Encoder Layer for all the tasks. Reason for this is using attention between words give better understanding of the sentence, resulting in good embeddings.
+This is the base model which is used for all the tasks. Used Transformer Encoder Layer for all the tasks. Reason for this is using attention between words give better understanding of the sentence, and use of each word, resulting in good embeddings.
 
 ## Task1
 Sentence Embedding Transformer Model, architecture:
  - Base Model
- - Mean Pooling
- - Linear Layer (300 dimension)
+ - Mean Pooling: Average all the sequence output from the base model, to get a single vector. 
+ - Linear Layer (300 dimension): Added another dense layer with 300 output neuron, generating embedding vector of shape (1, 300), for each sentence.
 
 ## Task2
 Sentiment Classification Model, architecture:
  - Base Model
- - Mean Pooling
- - Linear Layer (3 classes, Positive, Negative, Neutral)
-
+ - Mean Pooling : Average all the sequence output from the base model, to get a single vector.
+ - Linear Layer (3 classes, Positive, Negative, Neutral) : Added another dense layer with 3 output neuron, each neuron representing a class.
+ - Final Softmax Layer can be used to get the probability of each class, and choose the class with highest probability.
 
 ## Task 3
 File is present in both formats:
@@ -28,4 +31,6 @@ File is present in both formats:
 * [docs](https://docs.google.com/document/d/1zNavmyjJhrhIhzkUU1A5l_5o62VSlwJX_xnaQYcy8G4/edit?usp=sharing)
 
 ## Task 4
+
+
 
