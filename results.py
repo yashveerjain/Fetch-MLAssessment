@@ -140,12 +140,13 @@ se_lr = 1e-2
 sc_lr = 1e-2
 
 parameters.append(
-    {"params" : se.parameters(), "lr" : se_lr}
+    {"params" : se_task_model.parameters(), "lr" : se_lr}
 )
 
 parameters.append(
-    {"params" : sc.parameters(), "lr" : sc_lr}
+    {"params" : sc_task_model.parameters(), "lr" : sc_lr}
 )
+
 
 optimizer = optim.Adam(parameters)
 
