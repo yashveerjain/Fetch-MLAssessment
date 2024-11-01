@@ -1,7 +1,10 @@
 # Fetch ML Assessment
 link to assessment [here](https://app3.greenhouse.io/tests/dc9d7860c17da3281ab024e4ef3d51d2?utm_medium=email&utm_source=TakeHomeTest&utm_source=Automated)
 
-# Base Model
+# How to Run?
+* `result.ipynb` contains the explaination, implementation and results of all the tasks.
+
+## Base Model
 Base Model Architecture:
  - Embedding Layer:
     - It will generate the embedding vector for each word. Give more context to the model about the word. 
