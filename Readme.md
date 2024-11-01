@@ -9,3 +9,11 @@ Sentence Embedding Transformer Model, architecture:
  - Mean Pooling
  - Linear Layer (300 dimension)
 
+## Task2
+Sentiment Classification Model, architecture:
+ - Embedding Layer
+ - Positional Encoding
+ - Transformer Encoder Layer
+ - Mean Pooling
+ - Linear Layer (3 classes, Positive, Negative, Neutral)
+

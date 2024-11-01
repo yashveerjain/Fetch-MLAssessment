@@ -60,3 +60,15 @@ class SentenceEmbedding(nn.Module):
         x = self.embed(x)
 
         return x
+
+class SentimentClassifier(nn.Module):
+    def __init__(self, d_model=300, n_classes=2):
+        super(SentimentClassifier, self).__init__()
+        self.linear = nn.Linear(d_model, n_classes)
+
+    def forward(self, x):
+        # x: output from base model
+        # x: (N, L, D), average pooling along sequence dimension.
+        x = torch.mean(x, dim=1)
+        x = self.linear(x)
+        return x
