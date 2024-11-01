@@ -25,12 +25,11 @@ Sentiment Classification Model, architecture:
  - Linear Layer (3 classes, Positive, Negative, Neutral) : Added another dense layer with 3 output neuron, each neuron representing a class.
  - Final Softmax Layer can be used to get the probability of each class, and choose the class with highest probability.
 
-## Task 3
+## Task 3 and 4
 File is present in both formats:
 * [pdf](Fetch-assessment-Task3.pdf)
 * [docs](https://docs.google.com/document/d/1zNavmyjJhrhIhzkUU1A5l_5o62VSlwJX_xnaQYcy8G4/edit?usp=sharing)
 
-## Task 4
 
 
 
