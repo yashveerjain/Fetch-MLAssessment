@@ -5,3 +5,6 @@ requests
 regex
 sentencepiece
 sacremoses
+huggingface_hub
+transformers
+importlib-metadata

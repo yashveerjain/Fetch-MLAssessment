@@ -20,6 +20,7 @@ Sentence Embedding Transformer Model, architecture:
  - Base Model
  - Mean Pooling: Average all the sequence output from the base model, to get a single vector. 
  - Linear Layer (300 dimension): Added another dense layer with 300 output neuron, generating embedding vector of shape (1, 300), for each sentence.
+ - Normalize the embedding vector, (x/||x||).
 
 ## Task2
 Sentiment Classification Model, architecture:

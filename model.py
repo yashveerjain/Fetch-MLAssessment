@@ -58,7 +58,7 @@ class SentenceEmbedding(nn.Module):
         # x: (N, L, D), average pooling along sequence dimension.
         x = torch.mean(x, dim=1)
         x = self.embed(x)
-        x = x/x.norm(dim=1)
+        x = x/x.norm(dim=1).reshape(-1,1)
 
         return x
 
