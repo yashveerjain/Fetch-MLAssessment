@@ -40,3 +40,23 @@ class BaseModel(nn.Module):
         x = self.encoder(x)
 
         return x
+
+class SentenceEmbedding(nn.Module):
+    def __init__(self, d_model=512, embed_size=300):
+        """
+        Initializes the SentenceEmbedding module.
+
+        Args:
+            d_model (int): Dimension of the model input.
+            embed_size (int): Size of the output embedding.
+        """
+        super(SentenceEmbedding, self).__init__()
+        self.embed = nn.Linear(d_model, embed_size)
+    
+    def forward(self, x):
+        # x: output from base model
+        # x: (N, L, D), average pooling along sequence dimension.
+        x = torch.mean(x, dim=1)
+        x = self.embed(x)
+
+        return x
