@@ -2,7 +2,24 @@
 link to assessment [here](https://app3.greenhouse.io/tests/dc9d7860c17da3281ab024e4ef3d51d2?utm_medium=email&utm_source=TakeHomeTest&utm_source=Automated)
 
 # How to Run?
-* `result.ipynb` contains the explaination, implementation and results of all the tasks.
+## Locally
+    * Install dependencies:
+    ```sh
+    pip install -r requirements.txt
+    ```
+    * `result.ipynb` contains the explaination, implementation and results of all the tasks.
+    * Results for Task 1 and 2 can also get through the following command:
+    ```python
+    python results.py
+    ```
+## Using Docker
+```shell
+docker pull yashveerj/fetch-ml-assessment-yashveer:latest
+docker run -it yashveerj/fetch-ml-assessment-yashveer:latest
+```
+* Note: The image is around `6GB` in size.
+
+# Details:
 
 ## Base Model
 Base Model Architecture:
