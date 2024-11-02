@@ -48,7 +48,7 @@ Sentiment Classification Model, architecture:
 
 ## Task 3 and 4
 File is present in both formats:
-* [pdf](Fetch-assessment-Task3.pdf)
+* [pdf](Fetch-assessment-Task-3&4.pdf)
 * [docs](https://docs.google.com/document/d/1zNavmyjJhrhIhzkUU1A5l_5o62VSlwJX_xnaQYcy8G4/edit?usp=sharing)
 
 
